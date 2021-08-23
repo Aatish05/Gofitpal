@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GoFitpal</string>
+    <string name="registeruser">Donot have account?<u> Register here</u></string>
+</resources>
