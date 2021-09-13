@@ -4,6 +4,53 @@
     tools:showIn="navigation_view"
     >
 
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_action_home"
+            />
+
+        <item
+            android:id="@+id/calculate"
+            android:title="Calorie Counter"
+            android:icon="@drawable/ic_action_calculate"
+            />
+        <item
+            android:id="@+id/diet"
+            android:title="Diet plan"
+            android:icon="@drawable/ic_action_dietplan"
+            />
+        <item
+            android:id="@+id/workout"
+            android:title="Workout Plan"
+            android:icon="@drawable/ic_action_workoutplan"
+            />
+        <item
+            android:id="@+id/todaysintake"
+            android:title="Today's Intake"
+            android:icon="@drawable/ic_action_intake"
+            />
+        <item
+            android:id="@+id/weeeklyreport"
+            android:title="Weekly Report"
+            android:icon="@drawable/ic_action_report"
+            />
+        <item
+            android:id="@+id/setting"
+            android:title="Settings"
+            android:icon="@drawable/ic_action_settings"
+            />
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_action_logout"
+            />
+
+
+
+    </group>
 
 
 

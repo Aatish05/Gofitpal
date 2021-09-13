@@ -20,6 +20,9 @@
         android:id="@+id/nav_view"
         android:background="#ffff"
         android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/header"
+        android:layout_gravity="start"
         >
 
 
