@@ -1,56 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view"
-    >
-
-    <group android:checkableBehavior="single">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
         <item
-            android:id="@+id/home"
+            android:id="@+id/id_home_fragment"
             android:title="Home"
             android:icon="@drawable/ic_action_home"
+            android:checked="true"
+            android:checkable="true"
             />
 
         <item
-            android:id="@+id/calculate"
+            android:id="@+id/id_calorie_fragment"
             android:title="Calorie Counter"
+            android:checkable="true"
             android:icon="@drawable/ic_action_calculate"
             />
         <item
-            android:id="@+id/diet"
+            android:id="@+id/id_diet_fragment"
             android:title="Diet plan"
+
+            android:checkable="true"
             android:icon="@drawable/ic_action_dietplan"
             />
         <item
-            android:id="@+id/workout"
+            android:id="@+id/id_workoutplan_fragment"
             android:title="Workout Plan"
+
+            android:checkable="true"
             android:icon="@drawable/ic_action_workoutplan"
             />
         <item
-            android:id="@+id/todaysintake"
+            android:id="@+id/id_todaysintake_fragment"
             android:title="Today's Intake"
+
+            android:checkable="true"
             android:icon="@drawable/ic_action_intake"
             />
         <item
-            android:id="@+id/weeeklyreport"
+            android:id="@+id/id_weeklyreport_fragment"
             android:title="Weekly Report"
+
+            android:checkable="true"
             android:icon="@drawable/ic_action_report"
             />
         <item
-            android:id="@+id/setting"
+            android:id="@+id/id_setting_fragment"
             android:title="Settings"
+
+            android:checkable="true"
             android:icon="@drawable/ic_action_settings"
             />
         <item
             android:id="@+id/logout"
             android:title="Logout"
+            android:checkable="true"
             android:icon="@drawable/ic_action_logout"
             />
 
 
 
-    </group>
 
 
 

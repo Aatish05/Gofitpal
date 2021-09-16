@@ -6,131 +6,45 @@ import android.view.MenuItem
 import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
+class MainActivity : AppCompatActivity(){
 
-    lateinit var HomeFragment : HomeFragment
-    lateinit var CalorieCounterFragment: CalorieCounterFragment
-    lateinit var DietPlanFragment: DietPlanFragment
-    lateinit var WorkoutPlanFragment: WorkoutPlanFragment
-    lateinit var TodaysIntakeFragment: TodaysIntakeFragment
-    lateinit var WeeklyReportFragment: WeeklyReportFragment
-    lateinit var SettingsFragment: SettingsFragment
+
+    private lateinit var toolbar: Toolbar
+    private lateinit var drawerLayout: DrawerLayout
+    private lateinit var navigationView: NavigationView
+    private lateinit var navController: NavController
+    private lateinit var appBarConfiguration: AppBarConfiguration
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setSupportActionBar(toolBar)
-        val actionBar = supportActionBar
-        actionBar?.title = "Navigation Drawer"
+        toolbar = findViewById(R.id.myToolbar)
+        setSupportActionBar(toolbar)
 
+        drawerLayout = findViewById(R.id.drawer)
+        navigationView= findViewById(R.id.navigationView)
 
-        val drawerToggle: ActionBarDrawerToggle = object : ActionBarDrawerToggle(
-            this,
-            drawerLayout,
-            toolBar,
-            (R.string.open),
-            (R.string.close)
-        ) {
-
-        }
-        drawerToggle.isDrawerIndicatorEnabled = true
-        drawerLayout.addDrawerListener(drawerToggle)
-        drawerToggle.syncState()
-
-        nav_view.setNavigationItemSelectedListner(this)
-
-        HomeFragment = HomeFragment()
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.frame_layout,HomeFragment)
-            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-            .commit()
-
-
+        navController= findNavController(R.id.fragmentContainerView)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.id_home_fragment, R.id.id_calorie_fragment,R.id.id_diet_fragment,R.id.id_setting_fragment,R.id.id_todaysintake_fragment,R.id.id_weeklyreport_fragment,R.id.id_workoutplan_fragment),drawerLayout)
+        setupActionBarWithNavController(navController,drawerLayout)
+        navigationView.setupWithNavController(navController)
 
     }
 
-    override fun onNavigationItemSelected(menuItem: MenuItem): Boolean {
-
-        when (menuItem.itemId){
-
-            R.id.home -> {
-                HomeFragment = HomeFragment()
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.frame_layout,HomeFragment)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    .commit()
-            }
-            R.id.calculate -> {
-                CalorieCounterFragment = CalorieCounterFragment()
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.frame_layout,CalorieCounterFragment)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    .commit()
-            }
-            R.id.diet -> {
-                DietPlanFragment = DietPlanFragment()
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.frame_layout,DietPlanFragment)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    .commit()
-            }
-            R.id.workout -> {
-                WorkoutPlanFragment = WorkoutPlanFragment()
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.frame_layout,WorkoutPlanFragment)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    .commit()
-            }
-            R.id.todaysintake -> {
-                TodaysIntakeFragment = TodaysIntakeFragment()
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.frame_layout,TodaysIntakeFragment)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    .commit()
-            }
-            R.id.setting -> {
-                WeeklyReportFragment = WeeklyReportFragment()
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.frame_layout,WeeklyReportFragment)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    .commit()
-            }
-
-            R.id.setting -> {
-                SettingsFragment = SettingsFragment()
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.frame_layout,SettingsFragment)
-                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    .commit()
-            }
-
-
-        }
-
-        drawerLayout.closeDrawer(GravityCompat.START)
-        return true
-    }
-
-    override fun onBackPressed() {
-
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        }
-        else{
-            super.onBackPressed()
-        }
-        super.onBackPressed()
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.fragmentContainerView)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 }

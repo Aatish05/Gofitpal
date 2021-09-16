@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/id_home_fragment">
+
+    <fragment
+        android:id="@+id/id_home_fragment"
+        android:name="com.example.gofitpal.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/id_calorie_fragment"
+        android:name="com.example.gofitpal.CalorieCounterFragment"
+        android:label="Calorie Counter"
+        tools:layout="@layout/fragment_calorie_counter" />
+    <fragment
+        android:id="@+id/id_diet_fragment"
+        android:name="com.example.gofitpal.DietPlanFragment"
+        android:label="Diet Plan"
+        tools:layout="@layout/fragment_diet_plan" />
+    <fragment
+        android:id="@+id/id_setting_fragment"
+        android:name="com.example.gofitpal.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/id_todaysintake_fragment"
+        android:name="com.example.gofitpal.TodaysIntakeFragment"
+        android:label="Today's Intake"
+        tools:layout="@layout/fragment_todays_intake" />
+    <fragment
+        android:id="@+id/id_workoutplan_fragment"
+        android:name="com.example.gofitpal.WorkoutPlanFragment"
+        android:label="Workout Plan"
+        tools:layout="@layout/fragment_workout_plan" />
+    <fragment
+        android:id="@+id/id_weeklyreport_fragment"
+        android:name="com.example.gofitpal.WeeklyReportFragment"
+        android:label="Weekly Report"
+        tools:layout="@layout/fragment_weekly_report" />
+</navigation>
