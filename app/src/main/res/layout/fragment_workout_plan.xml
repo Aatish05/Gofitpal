@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CHOOSE WORKOUT PLAN"
+        android:text="WORKOUT PLAN FOR SUNDAY"
         android:gravity="start"
         android:textColor="@color/teal_700"
         android:textStyle="bold"
@@ -18,88 +18,252 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"/>
 
-    <RadioGroup
+<!--    <RadioGroup-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="LIGHT EXERCISE"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="MODERATE EXERCISE"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textStyle="bold"/>-->
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="EXTREME EXERCISE"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textStyle="bold"/>-->
+
+
+<!--    </RadioGroup>-->
+
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PLAN FOR SUNDAY"-->
+<!--        android:background="#F9A825"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_margin="10dp"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PLAN FOR MONDAY"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="#558B2F"-->
+<!--        android:layout_margin="10dp"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PLAN FOR TUESDAY"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="#00838F"-->
+<!--        android:layout_margin="10dp"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PLAN FOR WEDNESDAY"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="#1565C0"-->
+<!--        android:layout_margin="10dp"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PLAN FOR THURSDAY"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="#00695C"-->
+<!--        android:layout_margin="10dp"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PLAN FOR FRIDAY"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="#D84315"-->
+<!--        android:layout_margin="10dp"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#C62828"-->
+<!--        android:text="PLAN FOR SATURDAY"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_margin="10dp"/>-->
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORKOUT PLAN"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="CHEST AND TRICEPS  v"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORKOUT LEVEL"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="MODERATE  v"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="start"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
         android:layout_marginLeft="20dp"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="20dp"
+        android:text="CARDIO"/>
 
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:text="LIGHT EXERCISE"
-            android:textStyle="bold"/>
+            android:src="@drawable/cad1"/>
 
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="MODERATE EXERCISE"
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:textStyle="bold"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="EXTREME EXERCISE"
+            android:src="@drawable/cad2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:textStyle="bold"/>
+            android:src="@drawable/cad3"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/cad2"/>
 
+    </LinearLayout>
 
-    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="start"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="GYM WORKOUTS"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PLAN FOR SUNDAY"
-        android:background="#F9A825"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/w1"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PLAN FOR MONDAY"
-        android:textColor="@color/white"
-        android:background="#558B2F"
-        android:layout_margin="10dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PLAN FOR TUESDAY"
-        android:textColor="@color/white"
-        android:background="#00838F"
-        android:layout_margin="10dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PLAN FOR WEDNESDAY"
-        android:textColor="@color/white"
-        android:background="#1565C0"
-        android:layout_margin="10dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PLAN FOR THURSDAY"
-        android:textColor="@color/white"
-        android:background="#00695C"
-        android:layout_margin="10dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PLAN FOR FRIDAY"
-        android:textColor="@color/white"
-        android:background="#D84315"
-        android:layout_margin="10dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#C62828"
-        android:text="PLAN FOR SATURDAY"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/w2"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/w3"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/w1"/>
 
+    </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="start"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="HOME WORKOUTS"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/h2"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/h1"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/h3"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/h1"/>
+
+    </LinearLayout>
 
 
 
