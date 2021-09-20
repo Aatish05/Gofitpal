@@ -8,43 +8,93 @@
     tools:context=".CalorieCounterFragment">
 
 
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Age"
-        android:layout_marginLeft="30dp"
-        android:textSize="30sp"
-        android:layout_marginTop="100px"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age :"
+            android:layout_marginLeft="30dp"
+            android:textSize="22sp"
+            android:layout_marginTop="100px"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23 Years"
+            android:layout_marginLeft="95dp"
+            android:textSize="20sp"
+            android:layout_marginTop="100px"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Height"
+        android:text="Height :"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="220px"
-        android:textSize="30sp"
+        android:layout_marginTop="260px"
+        android:textSize="22sp"
         android:textStyle="bold"/>
 
-    <TextView
-        android:layout_width="match_parent"
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5.7 ft"
+            android:layout_marginLeft="70dp"
+            android:textSize="20sp"
+            android:layout_marginTop="260px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weight"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight :"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="340px"
-        android:textSize="30sp"
+        android:layout_marginTop="430px"
+        android:textSize="22sp"
         android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="75 kg"
+            android:layout_marginLeft="70dp"
+            android:textSize="20sp"
+            android:layout_marginTop="430px"/>
+
+
+
+    </LinearLayout>
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="460px">
+        android:orientation="vertical"
+        android:layout_marginTop="590px">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gender"
-            android:textSize="30sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             android:layout_marginLeft="30dp"/>
 
@@ -52,45 +102,59 @@
             android:id="@+id/male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
             android:text="Male"
             android:textSize="20dp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/male"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
             android:text="Female"
-            android:layout_marginLeft="5dp"
-            android:textSize="20dp" />
-
+            android:textSize="20dp"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/male"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
             android:text="Others"
-            android:layout_marginLeft="5dp"
-            android:textSize="20dp" />
+            android:textSize="20dp"/>
 
 
     </RadioGroup>
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity"
+        android:text="Activity :"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="580px"
-        android:textSize="30sp"
+        android:layout_marginTop="1090px"
+        android:textSize="22sp"
         android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light: Exercise v"
+            android:layout_marginLeft="70dp"
+            android:textSize="20sp"
+            android:layout_marginTop="1090px"/>
+
+    </LinearLayout>
 
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="900px"
+        android:layout_marginTop="1450px"
         android:text="Calculate"
         android:textStyle="bold"
         android:textSize="20sp"

@@ -1,16 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".DietPlanFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Target :"
+            android:textColor="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:textSize="22sp"
+            android:layout_marginTop="100px"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14679 Calories"
+            android:layout_marginLeft="45dp"
+            android:textSize="20sp"
+            android:layout_marginTop="100px"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE YOUR FAVOURITE FOOD"
+        android:textColor="@color/teal_700"
+        android:layout_marginLeft="30dp"
+        android:textSize="22sp"
+        android:layout_marginTop="100px"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Food Items"
+            android:layout_marginLeft="45dp"
+            android:textSize="20sp"
+            android:layout_marginTop="100px"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:text="SEARCH"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECTED ITEMS"
+        android:textColor="@color/teal_700"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="100px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. EGG"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="30px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. BROCOULLI"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. SOYACHUNKS"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. PEANUT BUTTER"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. BROWN BREAD"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6. CHICKEN"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10px"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="430px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:text="SUBMIT"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Diet plan"
-        android:gravity="center"
-        android:textSize="50sp"
-        />
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:text="Note: Choose your favourite food items and we will make diet plan according to your weekly target."
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="2dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"/>
+
+
+</LinearLayout>
